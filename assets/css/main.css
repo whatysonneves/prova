@@ -1,0 +1,18 @@
+body {
+	padding-top: 100px;
+}
+
+footer.index {
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+div.contador {
+	padding: 25px 0px;
+	background-color: #fff;
+}
+
+div.navbar-bottom-hack {
+	margin-bottom: 50px;
+	color: transparent;
+}
