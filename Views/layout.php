@@ -2,9 +2,28 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8" />
-	<base href="<?php echo DEFAULT_URL ?>" />
 	<title><?php echo ( array_key_exists("titulo", $viewBag) ? $viewBag["titulo"]." - " : "" ).$viewBag["site_titulo"] ?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="<?php echo $viewBag["site_descricao"] ?>" />
+	<meta name="keywords" content="Arrais, Prova Arrais, Simulado Arrais, Simulado Online Arrais, Prova Simulado Arrais, Prova Simulado Online Arrais, Testar conhecimento para prova de Arrais, Arrais Amador, Prova Arrais Amador, Simulado Arrais Amador, Simulado Online Arrais Amador, Prova Simulado Arrais Amador, Prova Simulado Online Arrais Amador, Testar conhecimento para prova de Arrais Amador, Motonauta, Prova Motonauta, Simulado Motonauta, Simulado Online Motonauta, Prova Simulado Motonauta, Prova Simulado Online Motonauta, Testar conhecimento para prova de Motonauta" />
+	<meta property="og:title" content="<?php echo ( array_key_exists("titulo", $viewBag) ? $viewBag["titulo"]." - " : "" ).$viewBag["site_titulo"] ?>" />
+	<meta property="og:site_name" content="<?php echo $viewBag["site_titulo"] ?>" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="<?php echo $viewBag["site_descricao"] ?>" />
+	<meta property="og:locale" content="pt-BR" />
+	<meta property="og:url" content="<?php echo DEFAULT_URL.preg_replace("/^\//i", "", $_SERVER["REQUEST_URI"]) ?>" />
+	<meta property="og:image" content="<?php echo DEFAULT_URL ?>assets/imgs/lancha.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="720" />
+	<meta property="og:image:alt" content="Foto de uma lancha em uma praia de água clara" />
+	<meta property="og:image" content="<?php echo DEFAULT_URL ?>assets/imgs/jet-ski.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="720" />
+	<meta property="og:image:alt" content="Foto de uma manobra legal em uma motoaquática em água escura" />
+	<base href="<?php echo DEFAULT_URL ?>" />
 <?php echo Core::renderCSS() ?>
 </head>
 <body>

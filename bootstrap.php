@@ -10,6 +10,7 @@ define("DIR", dirname(__FILE__).DS);
 define("DEFAULT_URL", Core::scheme()."://".Core::server()."/");
 
 $viewBag["site_titulo"] = "Prova Simulado de Arrais Amador e Motonauta";
+$viewBag["site_descricao"] = "Sistema de simulado online para provas de arrais amador e motonauta. Faça quantos simulados você quiser e teste seus conhecimentos. Disponíveis mais de 200 questões.";
 $VIEW = "";
 $layout = true;
 
